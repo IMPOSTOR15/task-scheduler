@@ -1,0 +1,52 @@
+.alert {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding: 10px;
+    top: 10%;
+    left: 0;
+    right: 0;
+    animation: opchange 1s forwards;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    z-index: 9999;
+}
+
+.alert_error {
+    background-color:#790000;
+    border: 2px solid #b11414c5;
+}
+
+.alert_notify {
+    background-color:#793000;
+    border: 2px solid #ff6423;
+}
+
+@keyframes opchange {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.closebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 2rem;
+    line-height: 20px;
+    margin-top: -8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: #ff0000;
+}
+.hide {
+    display: none;
+}

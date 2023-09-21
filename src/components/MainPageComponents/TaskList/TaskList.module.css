@@ -1,0 +1,30 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 5vw;
+    gap: 20px;
+}
+
+.taskList_sortRow {
+    display: flex;
+    gap: 20px;
+}
+
+.taskList_sortBtn {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    color: #fff;
+    margin: 10px 0;
+    background: transparent;
+    border: 2px solid #ff6423;
+    border-radius: 20px;
+    box-shadow: none;
+    min-width: 170px;
+    transition: all 0.3s ease-in-out;
+}
+
+.taskList_sortBtn:hover {
+    box-shadow: 0 0 5px 0.2rem rgba(255, 123, 0, 0.3);
+}

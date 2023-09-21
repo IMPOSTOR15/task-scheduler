@@ -1,0 +1,86 @@
+.loginForm {
+    margin: 15vh auto;
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+.errorText {
+    color: rgb(255, 113, 113);
+    align-self: self-start;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+.textField {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.textField__label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.textField__input {
+    display: block;
+    width: 92%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #212529;
+    background-clip: padding-box;
+    border: 1px solid #ff6423;
+    border-radius: 0.25rem;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.textField__input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.textField__input:focus {
+    color: #fff;
+    background-color: #ff652341;
+    border-color: #ff6423;
+    outline: 0;
+    box-shadow: 0 0 5px 0.2rem rgba(255, 123, 0, 0.3);
+}
+
+.textField__input:disabled,
+.textField__input[readonly] {
+    background-color: #ff6423;
+    opacity: 1;
+}
+
+.registrationText {
+    align-self: self-start;
+    margin: 0;
+}
+.registrationLink {
+    text-decoration: none;
+    color: #ff6423;
+}
+.LoginButton {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 60px;
+    color: #fff;
+    margin: 10px 0;
+    background: linear-gradient(90deg, rgba(255,100,35,1) 0%, rgba(124,0,255,1) 85%);
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.LoginButton:hover {
+    box-shadow: 0 0 5px 0.2rem rgba(255, 123, 0, 0.3);
+}

@@ -1,0 +1,77 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid rgba(255,100,35,1);
+    border-radius: 20px;
+    color: #fff;
+    transition: border 0.3s ease-in-out;
+}
+.task_complete {
+    border: 2px solid rgb(7, 218, 0);
+}
+.task__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.task__title {
+    margin: 0;
+}
+.task__footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.task__editBtn {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    color: #fff;
+    margin: 10px 0;
+    background: linear-gradient(90deg, rgba(255,100,35,1) 0%, rgba(124,0,255,1) 85%);
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.task__editBtn:hover {
+    box-shadow: 0 0 5px 0.2rem rgba(255, 123, 0, 0.3);
+}
+
+.task__uncompleteBtn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../assets/icons/cancel.svg);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.task__completeBtn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../assets/icons/complete.svg);
+    background-size: contain;
+    background-color: transparent;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.task__deleteBtn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../assets/icons/delete.svg);
+    background-size: contain;
+    background-color: transparent;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
